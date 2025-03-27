@@ -11,13 +11,13 @@ end_date = '2025-03-23'
 plt.figure(figsize=(12,6))
 
 btc_data = yf.download('BTC-USD', start=start_date, end=end_date)
-btc_data.to_csv('data/btc.csv')
+btc_data.to_csv('coins_data/btc.csv')
 eth_data = yf.download('ETH-USD', start=start_date, end=end_date)
-btc_data.to_csv('data/eth.csv')
+eth_data.to_csv('coins_data/eth.csv')
 sol_data = yf.download('SOL-USD', start=start_date, end=end_date)
-btc_data.to_csv('data/sol.csv')
+sol_data.to_csv('coins_data/sol.csv')
 bnb_data = yf.download('BNB-USD', start=start_date, end=end_date)
-btc_data.to_csv('data/bnb.csv')
+bnb_data.to_csv('coins_data/bnb.csv')
 
 print(f"Type: {type(bnb_data)}")
 
